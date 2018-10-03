@@ -4,7 +4,7 @@
     <title>IOs toggle</title>
 
     <style>
-        .mylabel {
+        .ios_checkbox_label {
             position: relative;
             display: block;
             width: 60px;
@@ -12,11 +12,11 @@
             margin-bottom: 15px;
         }
 
-        .mylabel input {
+        .ios_checkbox_label input {
             display: none;
         }
 
-        .slidinggroove {
+        .sliding_groove {
             position: absolute;
             top: 0;
             right: 0;
@@ -27,7 +27,7 @@
             transition: all 0.3s ease;
         }
 
-        .slidinggroove:after {
+        .sliding_groove:after {
             position: absolute;
             content: '';
             width: 28px;
@@ -39,15 +39,15 @@
             transition: all 0.3s ease;
         }
 
-        input:checked + .slidinggroove {
+        input:checked + .sliding_groove {
             background: #5fcf80;
         }
 
-        input:checked + .slidinggroove:after {
+        input:checked + .sliding_groove:after {
             transform: translateX(30px)
         }
 
-        .display-text {
+        .display_text {
             position: relative;
             top: 5px;
             margin-left: 65px;
@@ -68,16 +68,16 @@ if (isset($_POST['submit'])) {
 
 <form method="post">
 
-    <div class="mylabel">
+    <div class="ios_checkbox_label">
         <input type="checkbox" id="coding" name="skills">
-        <div class="slidinggroove"></div>
-        <label class="mylabel" for="coding"><p class="display-text">Coding</p></label>
+        <div class="sliding_groove"></div>
+        <label class="ios_checkbox_label" for="coding"><p class="display_text">Coding</p></label>
     </div>
 
-    <div class="mylabel">
+    <div class="ios_checkbox_label">
         <input type="checkbox" id="design" name="design" checked>
-        <div class="slidinggroove"></div>
-        <label class="mylabel" for="design"><p class="display-text">Design</p></label>
+        <div class="sliding_groove"></div>
+        <label class="ios_checkbox_label" for="design"><p class="display_text">Design</p></label>
     </div>
 
     <br/>
