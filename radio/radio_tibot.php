@@ -91,10 +91,7 @@
         body div {
             padding: 5rem;
         }
-        body label {
-            display: block;
-            line-height: 40px;
-        }
+
 
     </style> 
 </head>
@@ -108,34 +105,18 @@ if (isset($_POST['submit'])) {
 
 <form class="form" method="post">
 
-
-
     <div>
         <label>
-            <input type="checkbox" class="option-input checkbox" checked />
-            Checkbox
+            <input type="radio" class="option-input radio" name="example" value="Javascript" checked />
+            Javascript
         </label>
         <label>
-            <input type="checkbox" class="option-input checkbox" />
-            Checkbox
+            <input type="radio" class="option-input radio" name="example" value="HTML" />
+            HTML 5
         </label>
         <label>
-            <input type="checkbox" class="option-input checkbox" />
-            Checkbox
-        </label>
-    </div>
-    <div>
-        <label>
-            <input type="radio" class="option-input radio" name="example" checked />
-            Radio option
-        </label>
-        <label>
-            <input type="radio" class="option-input radio" name="example" />
-            Radio option
-        </label>
-        <label>
-            <input type="radio" class="option-input radio" name="example" />
-            Radio option
+            <input type="radio" class="option-input radio" name="example" value="CSS"/>
+            CSS
         </label>
     </div>
 
