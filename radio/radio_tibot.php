@@ -42,12 +42,12 @@
             -o-appearance: none;
             appearance: none;
             position: relative;
-            top: 13.33333px;
+            top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            height: 40px;
-            width: 40px;
+            height: 10px;
+            width: 10px;
             transition: all 0.15s ease-out 0s;
             background: #9faab7;
             border: none;
@@ -66,14 +66,14 @@
             /*background: #40e0d0;*/
         }
         .option-input:checked::before {
-            height: 40px;
-            width: 40px;
+            height: 10px;
+            width: 10px;
             position: absolute;
             content: '✔';
             display: inline-block;
-            font-size: 26.66667px;
+            font-size: 21.66667px;
             text-align: center;
-            line-height: 40px;
+            line-height: 10px;
         }
         .option-input:checked::after {
             -webkit-animation: click-wave 0.65s;
@@ -98,12 +98,12 @@
         label{
             background: #cccccc;
             border-radius: 10px;
-            padding: 16px 6px;
-            margin: 10px;
+            padding: 10px 5px;
+            margin: 5px;
         }
 
         label.js_checked{
-            background: green;
+            background: #018bbc;
         }
         label.js_checked .option-input {
             background: none;
