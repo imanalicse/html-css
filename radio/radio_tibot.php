@@ -2,6 +2,20 @@
 <html>
 <head>
     <title> Radio Button Style </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('label').on('click', function () {
+                var _self = $(this);
+                $('label').removeClass('js_checked');
+                if(_self.find('input[type=radio]').is(':checked')){
+                   _self.addClass('js_checked');
+                }
+            });
+        });
+    </script>
+
+
     <style>
         *{font-family: 'Roboto', sans-serif;}
 
@@ -35,7 +49,7 @@
             height: 40px;
             width: 40px;
             transition: all 0.15s ease-out 0s;
-            background: #cbd1d8;
+            background: #9faab7;
             border: none;
             color: #fff;
             cursor: pointer;
@@ -90,6 +104,16 @@
         }
         body div {
             padding: 5rem;
+        }
+        label{
+            background: #cccccc;
+            border-radius: 10px;
+            padding: 16px 6px;
+            margin: 10px;
+        }
+
+        label.js_checked{
+            background: green;
         }
 
 
