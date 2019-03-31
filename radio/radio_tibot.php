@@ -60,10 +60,10 @@
             z-index: 1000;
         }
         .option-input:hover {
-            background: #9faab7;
+            /*background: #9faab7;*/
         }
         .option-input:checked {
-            background: #40e0d0;
+            /*background: #40e0d0;*/
         }
         .option-input:checked::before {
             height: 40px;
@@ -92,16 +92,6 @@
             border-radius: 50%;
         }
 
-        body {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: box;
-            background: #e8ebee;
-            color: #9faab7;
-            font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-            text-align: center;
-        }
         body div {
             padding: 5rem;
         }
@@ -114,6 +104,9 @@
 
         label.js_checked{
             background: green;
+        }
+        label.js_checked .option-input {
+            background: none;
         }
 
 
@@ -130,7 +123,7 @@ if (isset($_POST['submit'])) {
 <form class="form" method="post">
 
     <div>
-        <label>
+        <label class="js_checked">
             <input type="radio" class="option-input radio" name="example" value="Javascript" checked />
             Javascript
         </label>
